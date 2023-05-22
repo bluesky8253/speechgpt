@@ -17,7 +17,7 @@ export default async function sendRequest(
     }),
   };
 
-  const openaiHostAddress = openaiHost || 'api.openai.com';
+  const openaiHostAddress = openaiHost || 'api.chatanywhere.com.cn';
 
   fetch('https://' + openaiHostAddress + '/v1/chat/completions', requestOptions)
     .then(response => response.json())
